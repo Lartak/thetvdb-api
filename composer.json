@@ -1,0 +1,34 @@
+{
+  "name": "lartak/thetvdb-api",
+  "description": "PHP wrapper for The TVDB API v2. Supports two types of approaches, one modelled with repositories, models and factories. And the other by simple array access to RAW data from The TVDB.",
+  "homepage": "https://github.com/lartak/php-tmdb",
+  "keywords": ["thetvdb", "api", "php", "wrapper", "tv", "tv show", "tvdb"],
+  "license": "MIT",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "Lartak",
+      "email": "webmaster@lartak.fr"
+    }
+  ],
+  "require": {
+    "php": ">=5.6.0",
+    "ext-curl": "*",
+    "ext-json": "*",
+    "symfony/event-dispatcher": ">=2.4,<5",
+    "symfony/options-resolver": ">=2.4,<5",
+    "guzzlehttp/guzzle": "~6.0",
+    "psr/log": "~1.0",
+    "doctrine/cache": "^1.6",
+    "kevinrob/guzzle-cache-middleware": "^1.2 || ^2.0",
+    "rtheunissen/guzzle-log-middleware": "^0.4.0"
+  },
+  "suggest": {
+    "monolog/monolog": "Required if you want to make use of logging features."
+  },
+  "autoload": {
+    "psr-4": {
+      "TheTvDb\\": "src/"
+    }
+  }
+}
